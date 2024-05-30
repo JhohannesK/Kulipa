@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const KnowMore = () => {
 	return (
-		<section className='mt-24 px-32'>
+		<section className='mt-24 px-10 lg:px-32'>
 			<div className='flex flex-col gap-10 lg:flex-row items-center justify-between capitalize'>
 				<div className='flex flex-col gap-5'>
 					<h1 className='text-5xl md:text-7xl font-bold'>
@@ -35,7 +35,7 @@ const KnowMore = () => {
 					</div>
 				</div>
 				<div>
-					<div className='relative'>
+					<div className='relative overflow-hidden'>
 						<Image
 							src={'/man.jpeg'}
 							height={1500}

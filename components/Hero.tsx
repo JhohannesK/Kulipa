@@ -24,12 +24,12 @@ const Hero = () => {
 						we are here for you. We create business with you in mind. We
 						make things easier.
 					</p>
-					<div className='mt-20 flex items-center justify-between'>
+					<div className='mt-20 flex flex-col md:flex-row items-center justify-between'>
 						<Button className='bg-black h-10 text-white px-10 py-5 rounded-md'>
 							Download App
 						</Button>
 						<div></div>
-						<div>
+						<div className='flex gap-3 items-center md:flex-col'>
 							<GiStarShuriken />
 							<p className='font-bold text-lg'>1k+</p>
 							<p className='text-sm'>Active users acros the world</p>
@@ -56,8 +56,12 @@ const Hero = () => {
 			</div>
 
 			<div className='bg-primary h-24 -skew-y-3 relative mt-5'>
-				<div className='bg-black text-white py-8 text-3xl skew-y-3'>
-					<div className='flex gap-4'>
+				<div className='bg-black flex items-center text-white py-8 text-3xl skew-y-3'>
+					<div className='flex gap-4 items-center'>
+						<GiStarShuriken />
+						Easy Banking
+					</div>
+					<div className='flex gap-4 items-center'>
 						<GiStarShuriken />
 						Easy Banking
 					</div>

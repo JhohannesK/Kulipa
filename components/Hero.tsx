@@ -8,7 +8,7 @@ const Hero = () => {
 	return (
 		<section className='flex flex-col justify-between gap-10 xl:gap-16  md:mt-20 capitalize'>
 			<div className='flex justify-between gap-40'>
-				<div className='capitalize pl-10 md:pl-32 pt-16'>
+				<div className='capitalize text-center md:text-left p-5 sm:pl-10 md:pl-32 pt-16'>
 					<p className='text-xl md:text-2xl font-semibold'>
 						Export Digital Banking
 					</p>
@@ -25,7 +25,7 @@ const Hero = () => {
 						we are here for you. We create business with you in mind. We
 						make things easier.
 					</p>
-					<div className='mt-20 flex flex-col md:flex-row items-center justify-between'>
+					<div className='mt-20 flex flex-col  gap-5 md:flex-row items-center justify-between'>
 						<Button className='bg-black h-10 text-white px-10 py-5 rounded-md'>
 							Download App
 						</Button>

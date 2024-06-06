@@ -35,7 +35,7 @@ const KnowMore = () => {
 					</div>
 				</div>
 				<div>
-					<div className='relative overflow-hidden'>
+					<div className='relative'>
 						<Image
 							src={'/man.jpeg'}
 							height={1500}
@@ -47,21 +47,21 @@ const KnowMore = () => {
 							src={'/one_card.jpeg'}
 							height={300}
 							width={300}
-							className='absolute -bottom-20 -right-20 -skew-y-12'
+							className=' absolute -bottom-20 -right-8 md:-right-20 -skew-y-12'
 							alt='card'
 						/>
 					</div>
 				</div>
 			</div>
-			<div className='flex flex-col lg:flex-row gap-10 lg:gap-16 mt-32'>
+			<div className='flex flex-col lg:flex-row gap-10 lg:gap-16 mt-20 md:mt-32'>
 				<div>
 					<Image src={'/cards.png'} height={800} width={800} alt='cards' />
 				</div>
 				<div className='flex flex-col gap-5'>
-					<h1 className='text-3x md:text-7xl font-bold'>
+					<h1 className='text-3xl md:text-7xl font-bold'>
 						Take your card payments anytime,
 					</h1>
-					<h1 className='text-3x md:text-7xl font-bold'>
+					<h1 className='text-3xl md:text-7xl font-bold'>
 						anywhere with kulipa
 					</h1>
 					<p>
@@ -71,12 +71,12 @@ const KnowMore = () => {
 					<Button>Apply Now</Button>
 				</div>
 			</div>
-			<div className='flex flex-col lg:flex-row gap-10 lg:gap-16 mt-32'>
+			<div className='flex flex-col lg:flex-row gap-10 lg:gap-16 mt-20 md:mt-32'>
 				<div>
-					<h1 className='text-3x md:text-7xl font-bold'>
+					<h1 className='text-3xl md:text-7xl font-bold'>
 						{"choose what's right "}
 					</h1>
-					<h1 className='text-3x md:text-7xl font-bold'>
+					<h1 className='text-3xl md:text-7xl font-bold'>
 						Services for you
 					</h1>
 				</div>

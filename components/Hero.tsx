@@ -2,12 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from './ui/button';
 import { GiStarShuriken } from 'react-icons/gi';
+import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 
 const Hero = () => {
 	return (
-		<section className='flex flex-col justify-between gap-10 xl:gap-16 mt-20 capitalize'>
+		<section className='flex flex-col justify-between gap-10 xl:gap-16  md:mt-20 capitalize'>
 			<div className='flex justify-between gap-40'>
-				<div className='capitalize pl-10 md:pl-32 pt-16 bg-gradient-to-r from-yellow-50 via-pink-50 to-white'>
+				<div className='capitalize pl-10 md:pl-32 pt-16'>
 					<p className='text-xl md:text-2xl font-semibold'>
 						Export Digital Banking
 					</p>
@@ -28,7 +29,29 @@ const Hero = () => {
 						<Button className='bg-black h-10 text-white px-10 py-5 rounded-md'>
 							Download App
 						</Button>
-						<div></div>
+						<div className='flex gap-6'>
+							<Image
+								src='/elianna-.jpg'
+								alt='user'
+								width={200}
+								height={50}
+								className='h-14 w-14 rounded-full object-cover'
+							/>
+							<Image
+								src='/nate.jpg'
+								alt='user'
+								width={200}
+								height={50}
+								className='h-14 w-14 rounded-full object-cover'
+							/>
+							<Image
+								src='/samuel.jpg'
+								alt='user'
+								width={200}
+								height={50}
+								className='h-14 w-14 rounded-full object-cover'
+							/>
+						</div>
 						<div className='flex gap-3 items-center md:flex-col'>
 							<GiStarShuriken />
 							<p className='font-bold text-lg'>1k+</p>
@@ -56,15 +79,12 @@ const Hero = () => {
 			</div>
 
 			<div className='bg-primary h-24 -skew-y-3 relative mt-5'>
-				<div className='bg-black flex items-center text-white py-8 text-3xl skew-y-3'>
-					<div className='flex gap-4 items-center'>
-						<GiStarShuriken />
-						Easy Banking
-					</div>
-					<div className='flex gap-4 items-center'>
-						<GiStarShuriken />
-						Easy Banking
-					</div>
+				<div className='bg-black flex items-center text-white py-8 gap-10 text-3xl skew-y-3'>
+					<InfiniteMovingCards
+						items={testimonials}
+						speed='normal'
+						className='w-full'
+					/>
 				</div>
 			</div>
 		</section>
@@ -72,3 +92,33 @@ const Hero = () => {
 };
 
 export default Hero;
+const testimonials = [
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+	{
+		icon: <GiStarShuriken />,
+		title: 'Easy Banking',
+	},
+];

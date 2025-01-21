@@ -8,6 +8,9 @@ const Hero = () => {
 	return (
 		<section className='flex flex-col justify-between gap-10 xl:gap-16  md:mt-20 capitalize'>
 			<div className='flex justify-between gap-40'>
+				<div className='fixed top-30 left-[30rem] w-96 h-96 bg-gradient-to-tr from-primary/5 to-primary/5 blur-lg z-10 rounded-[7rem]'></div>
+				<div className='fixed top-60 left-[50rem] w-96 h-96 bg-gradient-to-tr from-primary/5 to-primary/5 blur-lg z-10 rounded-[7rem]'></div>
+				<div className='fixed top-70 left-[40rem] w-96 h-96 bg-gradient-to-tr from-muted to-muted blur-lg z-10 rounded-[7rem]'></div>
 				<div className='capitalize text-center md:text-left p-5 sm:pl-10 md:pl-32 pt-16'>
 					<p className='text-xl md:text-2xl font-semibold'>
 						Export Digital Banking
